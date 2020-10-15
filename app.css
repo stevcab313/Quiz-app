@@ -1,0 +1,125 @@
+/* Your styles should be mobile-first and responsive */
+
+/** 
+  * If you are unclear on how to utilize a mobile-first, responsive technique to write your CSS, here is an example: 
+  *
+  * https://github.com/andreacardybailey/responsive_example/blob/master/styles/responsive-base.css 
+  *
+*/
+*, *::before, *::after {
+  box-sizing: border-box
+}
+
+* {
+  /*outline: solid 1px red;*/
+}
+
+body {
+  margin: 0 auto;
+  padding: 0 auto;
+  color: #ffff;
+  background-color: #0A8494
+  
+}
+
+h1 {
+  width: 100%;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.welcome-pg {
+  width: 100%;
+  color: #0A8494;
+  font-weight: bold;
+  font-family: sans-serif;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0 auto;
+  
+}
+
+.question-pg {
+  width: 100%;
+  color: #0A8494;
+  font-weight: bold;
+  font-family: sans-serif;
+  text-align: inherit;
+  margin: 0 auto;
+  padding: 0 auto;
+}
+
+.results-pg {
+  width: 100%;
+  color: #0A8494;
+  font-weight: bold;
+  font-family: sans-serif;
+  text-align: inherit;
+  margin: 0 auto;
+  padding: 0 auto;
+}
+
+.container{
+  background-color: #ffff;
+  padding: 50px 50px;
+}
+
+.question-container {
+  font-size: 20px;
+}
+
+.start-btn {
+  padding:10px 30px 10px 30px;
+  border: solid black 2px;
+  border-radius: 10%;
+  background-color: #0A8494;
+  color: #ffff;
+}
+
+.submit-btn, .next-btn, .restart-btn{
+  margin-top: 10px;
+  padding:5px 15px 5px 15px;
+  border: solid black 2px;
+  border-radius: 10%;
+  background-color: #0A8494;
+  color: #ffff;
+}
+
+
+button:hover{background-color:rgb(8, 213, 240)}
+button:focus{background-color:rgb(8, 213, 240)}
+button:active{background-color:rgb(8, 213, 240)}
+
+input[type="radio"] {
+  margin: 0 5px 10px 0;
+}
+
+input[type="radio"]:checked {
+  outline: auto 2px Highlight;
+}
+
+.hide {
+  display: none;
+}
+
+.correct {
+  border: 3px green solid;
+  padding: 0 2px;
+  
+}
+
+.wrong {
+  border: 3px red solid;
+  padding: 0 2px;
+}
+
+@media all and (min-width:600px) {
+  .welcome-pg, .question-pg,
+  .results-pg {
+    width: 40%;
+  }
+
+  .question-container {
+  font-size: 25px;
+  }
+}

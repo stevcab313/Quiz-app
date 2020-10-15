@@ -1,2 +1,1 @@
-# Quiz-app
-Quiz app with random questions
+### Boilerplate app structure for Quiz App project
